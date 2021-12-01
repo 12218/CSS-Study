@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		[name="indoor-outdoor"] {
+			margin: 20px;
+		}
+		.box {
+			border-style: solid;
+			border-color: black;
+			border-width: 5px;
+			text-align: center;
+		}
+		.yellow-box {
+			background-color: yellow;
+			padding: 10px;
+		}
+		.red-box {
+			background-color: red;
+			padding: 10px;
+			color: white;
+			margin: 10px;
+		}
+		.blue-box {
+			background-color: blue;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div class="box"></div> -->
+	<!-- <div class="yellow-box box">padding</div> -->
+	<div class="yellow-box box">
+		<div class="red-box box">padding</div>
+		<div class="blue-box box">padding</div>
+	</div>
+	<form id="cat-photo-form">
+		<label><input type="radio" name="indoor-outdoor">Door</label>
+		<label><input type="radio" name="indoor-outdoor">Door</label>
+		<label><input type="radio" name="outdoor-outdoor">Door</label>
+		<label><input type="radio" name="outdoor-outdoor">Door</label>
+	</form>
+</body>
+</html>
