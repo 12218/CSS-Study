@@ -18,3 +18,38 @@ li:nth-child(n)
 li:nth-child(2n)
 ```
 
+## 02 调用预设值
+
+```css
+.penguin {
+    --penguin-skin: black;
+	...
+  }
+
+  .penguin-top {
+    ...
+    background: var(--penguin-skin, gray);
+    ...
+  }
+```
+
+使用var可以直接调用预设值，其中“gray”在“--penguin-skin”不存在时作为替补颜色
+
+## 03 media
+
+```css
+:root {
+		--penguin-skin: black;
+		--penguin-belly: gray;
+		--penguin-beak: yellow;
+	}
+@media (max-height: 350px) {
+		:root {
+			--penguin-skin: green;
+			--penguin-belly: blue;
+			--penguin-beak: red;
+		}
+	}
+```
+
+当height小于350px时root发生改变
