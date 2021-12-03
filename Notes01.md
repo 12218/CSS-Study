@@ -53,3 +53,19 @@ li:nth-child(2n)
 ```
 
 当height小于350px时root发生改变
+
+## 04 grid
+
+```css
+.container {
+			...
+			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-rows: 50px 70px 100px;
+			grid-column-gap: 30px;
+		}
+.d5 {
+			...
+			grid-column: 2 / 4; // 开始于第二条线，终止于第四条线
+		}
+```
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.d1 {
+			background: LightSkyBlue;
+		}
+		.d2 {
+			background: lightsalmon;
+		}
+		.d3 {
+			background: paleturquoise;
+		}
+		.d4 {
+			background: lightpink;
+		}
+		.d5 {
+			background: palegreen;
+			grid-column: 2 / 4;
+			grid-row: 2 / 4;
+		}
+		.container {
+			font-size: 40px;
+			width: 100%;
+			background-color: lightblue;
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-rows: 50px 70px 100px;
+			grid-column-gap: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="d1">content</div>
+		<div class="d2">content</div>
+		<div class="d3">content</div>
+		<div class="d4">content</div>
+		<div class="d5">content</div>
+	</div>
+</body>
+</html>
