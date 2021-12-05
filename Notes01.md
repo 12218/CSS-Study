@@ -69,3 +69,48 @@ li:nth-child(2n)
 		}
 ```
 
+## 05 grid template
+
+```css
+.d5 {
+		...
+		grid-area: footer;
+	}
+.container {
+	...
+	grid-template-areas:
+		"header header"
+		"content content"
+		"footer footer";
+}
+```
+
+父元素定制模板，子元素可以调用模板
+
+![01](E:\git\CSS\images\01.png)
+
+## 06 grid-area
+
+```css
+.d5 {
+		background: palegreen;
+		/*grid-area: footer;*/
+		grid-area: 1/1/2/3;
+	}
+.container {
+	font-size: 40px;
+	width: 100%;
+	background-color: lightblue;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/*grid-template-areas:
+	"header header"
+	"content content"
+	"footer footer";*/
+}
+```
+
+grid-area的值可以是元素的起止位置，1/1/2/3表示元素从grid中的1，1开始到2，3结束
+
+![02](E:\git\CSS\images\02.png)
+
