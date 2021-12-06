@@ -114,3 +114,82 @@ grid-area的值可以是元素的起止位置，1/1/2/3表示元素从grid中的
 
 ![02](E:\git\CSS\images\02.png)
 
+## 07 grid重复
+
+```css
+grid-template-rows: repeat(2, 1fr 50px) 20px;
+/*等价于*/
+grid-template-rows: 1fr 50px 1fr 50px 20px;
+```
+
+## 08 minmax函数
+
+minmax函数包含两个值，代表元素长度最小和最大值
+
+## 09 media queries响应式布局
+
+```css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.container {
+			background-color: lightgray;
+			width: 100%;
+			min-height: 250px;
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: 1fr 3fr;
+			grid-template-rows: 1fr 8fr 1fr;
+		}
+		.header {
+			background-color: lightblue;
+			grid-area: 1/2/1/3;
+		}
+		.advert {
+			background-color: orange;
+			grid-area: 1/1/4/2;
+		}
+		.content {
+			background-color: lightgreen;
+			grid-area: 2/2/3/3;
+		}
+		.footer {
+			background-color: lightsalmon;
+			grid-area: 3/2/4/3;
+		}
+		@media (max-width: 600px) {
+			.container {
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr 2fr 6fr 1fr;
+			}
+			.header {
+				grid-area: 1/1/2/2;
+			}
+			.advert {
+				grid-area: 2/1/3/2;
+			}
+			.content {
+				grid-area: 3/1/4/2;
+			}
+			.footer {
+				grid-area: 4/1/5/2;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">header</div>
+		<div class="advert">advert</div>
+		<div class="content">content</div>
+		<div class="footer">footer</div>
+	</div>
+</body>
+</html>
+```
+
+布局随着浏览器大小的改变而进行改变
