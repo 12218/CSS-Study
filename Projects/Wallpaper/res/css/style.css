@@ -1,0 +1,35 @@
+body {
+    background-color: #0b4366;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr auto;
+}
+.slogan {
+    color: white;
+    font-size: 0.9rem;
+}
+.tag-block {
+    height: max-content;
+    width: 70%;
+}
+.tag1 {
+    display: inline-block;
+    height: 100px;
+    background-color: #0a3e56;
+}
+.tag2 {
+    display: inline-block;
+}
+.tag3 {
+    display: inline-block;
+}
+.tag4 {
+    display: inline-block;
+}
+.tag5 {
+    display: inline-block;
+}
