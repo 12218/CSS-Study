@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 body {
-  background-color: #eeeeee;
+  font-family: 'PT', sans-serif;
+  background-color: #252529;
   margin: 0;
+  color: #fff;
+  line-height: 1.6;
 }
 
 nav {
@@ -9,6 +14,7 @@ nav {
   background-color: #333333;
   margin: 0;
   text-align: left;
+  position: fixed;
 }
 
 ul {
@@ -35,7 +41,7 @@ nav a {
 }
 
 div.content {
-  height: fit-content();
+  height: 100px;
   width: 100%;
   background-image: url(../img/section-bg.jpg);
 }
