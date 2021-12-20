@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.layout {
+    height: 100%;
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.navi {
+    height: 8%;
+    width: 100%;
+    background-color: lightcyan;
+}
+
+.left-box {
+    height: 82%;
+    width: 20%;
+    background-color: lightgreen;
+    float: left;
+}
+
+.content {
+    height: 82%;
+    width: 60%;
+    background-color: lightsalmon;
+    float: left;
+}
+
+.right-box {
+    height: 82%;
+    width: 20%;
+    background-color: lightseagreen;
+    float: left;
+}
