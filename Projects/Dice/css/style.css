@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.dice-window {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dice-window div {
+    height: 150px;
+    flex-basis: 150px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px black solid;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice-window div div {
+    background-color: white;
+    border-radius: 20px;
+    flex-basis: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+/* .dice-window:nth-child(n) div span {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.dice-window:nth-child(2n) div span {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 10px;
+} */
+
+div span {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* span.dice-span-01 {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 15px;
+} */
+
+div.dice-02 {
+    justify-content: space-between;
+}
+
+span.dice-span-02-01 {
+    align-self: flex-start;
+}
+
+span.dice-span-02-02 {
+    align-self: flex-end;
+}
+
+div.dice-03 {
+    justify-content: space-between;
+}
+
+span.dice-span-03-01 {
+    align-self: flex-start;
+}
+
+span.dice-span-03-02 {
+    align-self: center;
+}
+
+span.dice-span-03-03 {
+    align-self: flex-end;
+}
+
+div.dice-04 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+span.dice-span-04-01 {
+    align-self: flex-start;
+}
+
+span.dice-span-04-02 {
+    align-self: flex-end;
+}
+
+span.dice-span-04-03 {
+    align-self: flex-start;
+}
+
+span.dice-span-04-04 {
+    align-self: flex-end;
+}
