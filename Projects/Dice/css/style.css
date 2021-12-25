@@ -15,7 +15,7 @@ html, body {
     justify-content: space-between;
 }
 
-.dice-window div {
+div.dice-block {
     height: 150px;
     flex-basis: 150px;
     flex-shrink: 0;
@@ -27,14 +27,25 @@ html, body {
     align-items: center;
 }
 
-.dice-window div div {
+div.dice-sub-block {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 20px;
+    flex-basis: 120px;
+    height: 120px;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+/* .dice-window div div {
     background-color: white;
     border-radius: 20px;
     flex-basis: 120px;
     height: 120px;
     flex-shrink: 0;
     flex-grow: 0;
-}
+} */
 
 /* .dice-window:nth-child(n) div span {
     margin: 10px;
@@ -52,7 +63,7 @@ html, body {
     border-radius: 10px;
 } */
 
-div span {
+div.dice-sub-block span {
     margin: 10px;
     height: 20px;
     width: 20px;
@@ -60,12 +71,10 @@ div span {
     border-radius: 10px;
 }
 
-/* span.dice-span-01 {
-    height: 30px;
-    width: 30px;
-    background-color: red;
-    border-radius: 15px;
-} */
+div.dice-01 {
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 div.dice-02 {
     justify-content: space-between;
@@ -96,22 +105,54 @@ span.dice-span-03-03 {
 }
 
 div.dice-04 {
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
+div.dice-04-sub-01, div.dice-04-sub-02 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 span.dice-span-04-01 {
-    align-self: flex-start;
+    align-self: center;
 }
 
 span.dice-span-04-02 {
-    align-self: flex-end;
+    align-self: center;
 }
 
 span.dice-span-04-03 {
-    align-self: flex-start;
+    align-self: center;
 }
 
 span.dice-span-04-04 {
-    align-self: flex-end;
+    align-self: center;
 }
+
+div.dice-05 {
+    flex-wrap: wrap;
+}
+
+div.dice-05-sub-01, div.dice-05-sub-03 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.dice-05-sub-02 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.dice-06 {
+    flex-wrap: wrap;
+}
+
+div.dice-06 div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
