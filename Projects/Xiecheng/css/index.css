@@ -1,0 +1,35 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* search component */
+.search-index {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%); /* 居中对齐 */
+    -webkit-transform: translate(-50%); /* 兼容老版本浏览器 */
+    top: 0;
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    height: 44px;
+    background-color: lightcoral;
+}
+
+.search {
+    flex: 1;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    background-color: purple;
+}
