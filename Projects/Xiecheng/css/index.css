@@ -116,10 +116,35 @@ a {
     color: #222;
 }
 
-.local-nav-icon {
+/* .local-nav-icon {
     height: 32px;
     width: 32px;
     background-color: #099fde;
     background: url(../images/localnav_bg.png) no-repeat 0 0;
     background-size: 32px auto;
+} */
+
+/* 模糊选择 */
+.local-nav li [class^="local-nav-icon"] {
+    height: 32px;
+    width: 32px;
+    background-color: #099fde;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -32px;
+}
+
+.local-nav li .local-nav-icon-icon3 {
+    background-position: 0 -64px;
+}
+
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -96px;
+}
+
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -128px;
 }
